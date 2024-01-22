@@ -26,6 +26,3 @@ const contactListSchema = new mongoose.Schema({
 const ContactList = mongoose.model('ContactList', contactListSchema);
 
 module.exports = ContactList;
-
-// Vdo5zzz1NY7jRTlm
-// ruhela7777

@@ -16,6 +16,8 @@ mongoose.
 
 const contactListRouter = require("./routes/contactListRoutes");
 const importRouter = require("./routes/importRoutes");
+const downloadRouter = require("./routes/downloadRoutes");
+
 
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: true }));
@@ -29,6 +31,7 @@ app.use(express.static("public"));
 
 app.use(contactListRouter);
 app.use(importRouter);
+app.use(downloadRouter);
 
 app.listen(process.env.PORT, () => {
   console.log("Server is running at port " + process.env.PORT);
